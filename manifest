@@ -1,8 +1,20 @@
-#appname: fugu
-#publisher: dainelvera
-#url: http://yovu.co
-#image: default_app_logo.png
-#appid: com.yovu.fugu
-#desc: undefined
-#type: desktop
-#guid: 5d5400b0-c39b-4334-a62a-37e4a39eb10f
+#appname:fugu
+#appid:com.yovu.fugu
+#publisher:Yovu
+#image:default_app_logo.png
+#url:http://yovu.co
+#guid:5d5400b0-c39b-4334-a62a-37e4a39eb10f
+#desc:No description provided
+#type:desktop
+runtime:1.3.1-beta
+app:1.3.1-beta
+codec:1.3.1-beta
+database:1.3.1-beta
+filesystem:1.3.1-beta
+media:1.3.1-beta
+monkey:1.3.1-beta
+network:1.3.1-beta
+platform:1.3.1-beta
+process:1.3.1-beta
+ui:1.3.1-beta
+worker:1.3.1-beta
