@@ -1,5 +1,10 @@
 if (navigator.onLine) {
   	
+  	$(function() {
+		$(".initial_keys").validate()
+	});
+
+
   	//Lets open the database
 	var db = Ti.Database.openFile(Ti.Filesystem.getFile(Ti.Filesystem.getApplicationDataDirectory(), 'fugu.db'));   
 
