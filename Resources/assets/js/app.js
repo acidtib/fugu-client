@@ -1,7 +1,16 @@
 if (navigator.onLine) {
   	
   	$(function() {
-		$(".initial_keys").validate()
+		$(".initial_keys").validate({
+   			submitHandler: function(form) {
+     			
+     			client = $('input[id=client]').val();
+     			api = $('input[id=api]').val();
+     			alert(client + api);
+
+     			//form.submit();
+   			}
+		})
 	});
 
 
@@ -14,7 +23,6 @@ if (navigator.onLine) {
 
 	//Lets close it up
 	db.close();
-
 
 
 } else {
