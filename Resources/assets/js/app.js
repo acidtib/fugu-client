@@ -8,8 +8,9 @@ if (navigator.onLine) {
 
 
 	//Lets close it up
-	rows.close();
 	db.close();
+
+
 
 } else {
 	alert('Im Not Online');
