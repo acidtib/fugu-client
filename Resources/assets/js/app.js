@@ -6,7 +6,23 @@ if (navigator.onLine) {
      			
      			client = $('input[id=client]').val();
      			api = $('input[id=api]').val();
-     			alert(client + api);
+     			//alert(client + api);
+
+     			var success = false;
+
+     			jQuery.getJSON("https://api.digitalocean.com/droplets/?client_id="+ client +"&api_key="+api, function(json) {
+    				success = true;
+
+    				alert(json['status']);
+				});
+
+				setTimeout(function() {
+				    if (!success)
+				    {
+				        // Handle error accordingly
+				        alert("Houston, we have a problem.");
+				    }
+				}, 5000);
 
      			//form.submit();
    			}
