@@ -1,8 +1,16 @@
-var app = Ti.API.application;
-//alert(app.getDataPath());
-
 if (navigator.onLine) {
-  	alert('Im Online');
+  	
+  	//Lets open the database
+	var db = Ti.Database.openFile(Ti.Filesystem.getFile(Ti.Filesystem.getApplicationDataDirectory(), 'fugu.db'));   
+
+	//Create the table
+	db.execute("CREATE TABLE IF NOT EXISTS API(id INTEGER, client TEXT, key TEXT)");
+
+
+	//Lets close it up
+	rows.close();
+	db.close();
+
 } else {
 	alert('Im Not Online');
 } 
